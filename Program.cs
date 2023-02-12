@@ -1,5 +1,12 @@
 ﻿using static System.Console;
 Clear();
+Write("Введите символы через пробел: ");
+string[] firstArray = GetArray(ReadLine()!);
+PrintArray(firstArray);
+WriteLine();
+string[] secondArray = new string[firstArray.Length];
+ArrayCompare(firstArray, secondArray);
+PrintArray(secondArray);
 
 string[] GetArray(string line)
 {
