@@ -12,6 +12,19 @@ string[] GetArray(string line)
           return arr;
 }
 
+void ArrayCompare(string[] inArray, string[] inArray1)
+{
+          int count = 0;
+          for (int i = 0; i < inArray.Length; i++)
+          {
+                    if (inArray[i].Length <= 3)
+                    {
+                              inArray1[count] = inArray[i];
+                              count++;
+                    }
+          }
+}
+
 void PrintArray(string[] inArray2)
 {
     for (int i = 0; i < inArray2.Length; i++)
